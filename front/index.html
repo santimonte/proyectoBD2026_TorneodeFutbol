@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Fútbol - Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-logo">
+        <img src="logo_momontequintero_fusion_river_caracas.png" alt="Logo Torneo"> 
+        <span>Torneo de Amigos</span>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="#" class="active">Registrar Equipo</a></li>
+        <li><a href="#">Partidos</a></li>
+        <li><a href="#">Posiciones</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Registrar Nuevo Equipo</h2>
+    <form id="form-equipo">
+        <div class="form-group">
+            <label for="nombre">Nombre del Equipo:</label>
+            <input type="text" id="nombre" placeholder="Ej: Los borrachos del tablon" required>
+        </div>
+        <div class="form-group">
+            <label for="camiseta">Color de Camiseta:</label>
+            <input type="text" id="camiseta" placeholder="Ej: Rojo y blanco" required>
+        </div>
+        <button type="submit">Guardar Equipo</button>
+    </form>
+    <div id="mensaje"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
