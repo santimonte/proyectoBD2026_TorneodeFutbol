@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('fondo_torneo_barrios_argentina_horizontal.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Cambiamos a columna para que la navbar se ubique arriba y el contenedor abajo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* ==================== ESTILOS NAVBAR ==================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro traslúcido */
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, links a la derecha */
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 1000; /* Asegura que quede por encima de todo */
+    border-bottom: 2px solid #28a745; /* Línea verde sutil abajo */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-logo img {
+    height: 45px; /* Tamaño del logo en la esquina */
+    width: auto;
+}
+
+.navbar-logo span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.2s;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.navbar-links a:hover, .navbar-links a.active {
+    color: white;
+    background-color: #28a745; /* Fondo verde para el botón activo/hover */
+}
+
+/* ==================== CONTENEDOR FORMULARIO ==================== */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    margin-top: 70px; /* Compensamos la altura de la navbar fija */
+}
+
+/* El resto de estilos (h2, .form-group, label, input, button, #mensaje) quedan iguales */
+h2 {
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group { margin-bottom: 20px; }
+label { display: block; margin-bottom: 8px; font-weight: bold; font-size: 16px; color: #444; }
+input { width: 100%; padding: 12px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; outline: none; }
+input:focus { border-color: #28a745; }
+button { background-color: #28a745; color: white; padding: 14px 20px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-size: 18px; font-weight: bold; margin-top: 10px; transition: background-color 0.2s; }
+button:hover { background-color: #218838; }
+#mensaje { margin-top: 20px; font-size: 16px; text-align: center; font-weight: bold; }
